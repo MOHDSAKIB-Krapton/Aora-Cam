@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AoraCam",
-    "slug": "AoraCam",
+    "slug": "auracam",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permissions.READ_EXTERNAL_STORAGE",
+        "android.permissions.WRITE_EXTERNAL_STORAGE",
+        "android.permissions.ACCESS_MEDIA_LOCATION",
+        "android.permissions.CAMERA",
+        "android.permissions.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.AoraCam"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +39,21 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6547ff63-4ac9-496c-8507-1e79173b5746"
+      }
+    },
+    "owner": "mohd_sakib_001",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6547ff63-4ac9-496c-8507-1e79173b5746"
     }
   }
 }
